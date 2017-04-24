@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="bom.js"></script>
+</head>
+<body>
+    <button class="btn1">设置1</button>
+    <button class="btn2">获取</button>
+    <button class="btn3">设置2</button>
+<script>
+    var btn1=document.querySelector('.btn1');
+    var btn2=document.querySelector('.btn2');
+    var btn3=document.querySelector('.btn3');
+    btn1.onclick=function(){
+        $.bom.search('a','你好');
+    }
+    btn2.onclick=function(){
+        alert($.bom.search('a'));
+    }
+    btn3.onclick=function(){
+        $.bom.search('a','111');
+    }
+</script>
+</body>
+</html>
